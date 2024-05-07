@@ -4,15 +4,18 @@ import cors from "cors";
 import User from "./models/User.js";
 app.use(cors());
 // npm install mongodb
-import mongoose from "mongoose";
-MongoKerberosError.connect( "mongodb+srv://danilovinicius1790:kd584mq9ONBq2F9F@cluster0.v08p4gq.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
-  )
+
+
+
+// Coloque sua chave do MongoDB Abaixo !!!!
+mongoose.connect("")
   .then(() => {
     console.log("Banco de dados conectado ! 🚀");
   })
   .catch((error) => {
     console.log("Não foi possivel conectar ao banco de dado.");
   });
+
 
 
 
